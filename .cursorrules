@@ -1,0 +1,15 @@
+# Cursor Rules
+
+- Use Next.js 15.3 App Router structure (`src/app`)
+- Use TypeScript throughout the project
+- Do not use pages/ directory or older Next.js routing
+- All global wrappers (e.g., PrivyProvider) must go inside `src/providers`
+- Place Privy configuration logic in `src/lib/privy.ts`
+- Components like ConnectButton must go inside `src/components`
+- All styling must use Tailwind CSS with classes, no inline styles
+- Set up `tailwind.config.js` with correct content paths (`src/**/*.{ts,tsx}`)
+- Avoid unnecessary abstraction or boilerplate — keep the template minimal and readable
+- Do not use class components or legacy React patterns
+- The template must be dark mode by default, no light mode toggle
+- Assume .env.local will have `NEXT_PUBLIC_PRIVY_APP_ID`
+- Add helpful placeholder text or TODOs if something is optional
